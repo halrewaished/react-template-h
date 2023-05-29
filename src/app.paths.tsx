@@ -42,7 +42,23 @@ class AppRoutes {
   getExampleByIdPageUrl(id:string):string{
     return this.getExampleByIdPagePath().replace(':id',id);
   }
-  // ./Example
+  
+  // About us
+  getAboutUsPagePath(): string {
+    return `/about-us`;
+  }
+  getAboutUsPageUrl(): string {
+    return this.getAboutUsPagePath();
+  }
+
+
+  // Contact us 
+  getContactUsPagePath(): string {
+    return `/contact-us`;
+  }
+  getContactUsPageUrl(): string {
+    return this.getContactUsPagePath();
+  }
 }
 
 export const appRoutesObj = AppRoutes.getInstance();
